@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>for you, mi lop 🤍</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND -->
+  <div id="background">
+    <div class="bg-layer bg-base"></div>
+    <div class="bg-layer bg-light"></div>
+  </div>
+
+  <!-- DECOR -->
+  <div id="decoration-layer"></div>
+  <div id="heart-container"></div>
+
+  <main id="app">
+
+    <!-- ================= SCENE 1 ================= -->
+    <section id="scene-envelope" class="scene is-active">
+      <div class="envelope-area">
+
+        <button id="envelope" class="envelope" aria-label="Buka amplop">
+          <span class="envelope-back"></span>
+          <span class="envelope-pocket"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-heart">🤍</span>
+        </button>
+
+        <p class="tap-hint">Klik amplopnya seng🤍</p>
+      </div>
+    </section>
+
+    <!-- ================= SCENE 2 ================= -->
+    <section id="scene-dialog" class="scene">
+      <div class="dialog-box">
+
+        <div id="dialogText" class="dialog-text"></div>
+
+        <div id="dialogOptions" class="dialog-options"></div>
+
+        <div class="dialog-hint">
+          <small>(klik teks untuk skip)</small>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LYRIC -->
+    <div id="lyricBox" class="lyric hidden"></div>
+
+  </main>
+
+  <!-- AUDIO -->
+  <audio id="bg-music" preload="auto" loop>
+    <source src="Res/audio/bg-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="open-sfx" preload="auto">
+    <source src="Res/audio/open-sfx.wav" type="audio/wav">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
