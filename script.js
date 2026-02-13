@@ -16,17 +16,17 @@ let currentNode = "start";
 ================================= */
 const dialogTree = {
   start: {
-    text: "Hai senggg, watchu doin? 🤍",
+    text: "Hai senggg, watchu doin? ❤️",
     options: [
-      { text: "BAIKKK", next: "good" },
-      { text: "lagi sibuk bangettt", next: "busy" }
+      { text: "BAIKKK🤗", next: "good" },
+      { text: "lagi sibuk bangettt😵‍💫", next: "busy" }
     ]
   },
 
   good: {
     text: "GOODDD, i just wanna tell u somtin'",
     options: [
-      { text: "apatuu?", next: "confess" }
+      { text: "apatuu?🤔", next: "confess" }
     ]
   },
 
@@ -45,7 +45,7 @@ const dialogTree = {
   },
 
   confess: {
-    text: "lopyu ehehe",
+    text: "lopyu ehehe, be my Valentine sengg❤️",
     autoNext:"tie"
   },
   tie: {
@@ -53,7 +53,7 @@ const dialogTree = {
     autoNext: "ejk"
   },
   ejk: {
-    text:"Liat ini dulu senggg",
+    text:"Liat ini dulu senggg, tunggu loading bentar yaa..❤️❤️",
     redirect:"https://besdey-fahm.my.canva.site/valenttt"
   }
 };
